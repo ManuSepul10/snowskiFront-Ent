@@ -1,0 +1,129 @@
+/*
+.footer-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-footer-section {
+  padding: 1rem 0;
+}
+
+.wrap-social-logos ul,
+.wrap-menu-footer-section ul {
+  display: flex;
+  justify-content: center;
+}
+
+.social-logo {
+  max-width: 75px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.wrap-menu-footer-section ul li {
+  font-size: 1.1rem;
+  padding: 1.5rem;
+}
+
+.footer-creds {
+  display: flex;
+  justify-content: center;
+}
+
+
+.icono-footer {
+
+
+
+
+  height: 30px; /* Altura: 90% del alto de la ventana 
+  background-image: url('/assets/img/logo3png.png');
+ Ruta hacia tu imagen 
+  background-size:  auto;       /* Ajusta la imagen para cubrir todo el fondo 
+  background-position: center;  /* Centra la imagen
+  background-repeat: no-repeat; Fallback o mezcla con fondo oscuro 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+
+}
+*/
+ .footer {
+  background-color: #FDCD2E;
+;
+  color: white;
+  display: flex;
+  align-items: center; /* agrega esto */
+  justify-content: space-between;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+.footer-left{
+    display: flex;
+  align-items: flex-start; /* o center si querés centrarlo verticalmente */
+  justify-content: flex-start;
+  padding: 10px;
+}
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-logo {
+  max-width: 270px;
+}
+
+.footer-center h4,
+.footer-right h4 {
+  margin-bottom: 15px;
+  
+}
+
+.sucursal p {
+  margin: 0 0 10px 0;
+}
+
+.footer-center{
+  color: white;
+}
+.icon-red {
+  width: 60px;
+  margin-right: 15px;
+  filter: brightness(0) invert(1); /* para que los íconos blancos resalten */
+  transition: filter 0.3s;
+}
+
+.icon-red:hover {
+  filter: brightness(0.8) invert(0.8);
+}
+
+.redes a {
+  display: inline-block;
+}
+.icon-map {
+  width: 50px;
+  margin-left: 8px;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+
+.icon-map:hover {
+  transform: scale(1.2);
+}
+.footer-center a {
+  color: white; /* color inicial blanco */
+  transition: color 0.3s ease; /* transición suave para el cambio de color */
+  text-decoration: none; /* opcional, para quitar el subrayado */
+}
+
+.footer-center a:hover {
+  color: blue; /* color azul al pasar el mouse */
+}
+

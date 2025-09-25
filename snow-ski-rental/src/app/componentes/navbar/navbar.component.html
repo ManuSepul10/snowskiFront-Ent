@@ -1,0 +1,157 @@
+
+<!--<nav id="contenedo">
+  <div class="iconos-izquierda">
+    <a href="./paginas/aboutus/aboutus.html">
+      <img src="../../assets/img/logos/logosverdadero.png" alt="User" class="icono-nav-izquierda">
+    </a>
+  </div>
+
+  <div id="home" class="borde">
+    <a href="#home">HOME</a>
+  </div>
+  <div id="hoteles" class="borde">
+    <a href="#reserva">RESERVA</a>
+  </div>
+  <div id="contacto" class="borde">
+    <a href="#footer">CONTACTO</a>
+  </div>
+  <div id="acercade" class="borde">
+    <a href="#experiencia">NOSOTROS</a>
+  </div>
+ 
+</nav>
+
+-->
+<nav id="contenedo">
+  <div class="iconos-izquierda">
+    <a href="./paginas/aboutus/aboutus.html">
+      <img src="../../assets/img/logos/logosverdadero.png" alt="User" class="icono-nav-izquierda" />
+    </a>
+  </div>
+
+  <!-- Botón hamburguesa para móvil -->
+  <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">
+    &#9776;
+  </button>
+
+  <!-- MENÚ CENTRAL -->
+  <div id="menu-central" [class.open]="menuAbierto">
+    <div id="home" class="borde">
+      <a href="#home" (click)="closeMenu()">HOME</a>
+    </div>
+    <div id="hoteles" class="borde">
+      <a href="#reserva" (click)="closeMenu()">RESERVA</a>
+    </div>
+    <div id="contacto" class="borde">
+      <a href="#footer" (click)="closeMenu()">CONTACTO</a>
+    </div>
+    <div id="acercade" class="borde">
+      <a href="#experiencia" (click)="closeMenu()">NOSOTROS</a>
+    </div>
+  </div>
+</nav>
+
+
+<app-carruselprincipal [items]="imagenes" [height]="550"></app-carruselprincipal>
+
+
+
+<!--
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Snow Ski - Temporada 2025</h1>
+    <h4>Descuentos en todos los productos</h4>
+    <p>10% OFF EN INDUMENTARIA PARA LA NIEVE</p>
+    <a href="https://wa.me/542616921356"  class="cta-a">¡Reserva ahora!</a>
+
+
+  </div>
+</section>
+-->
+
+<!--  <app-carrusel></app-carrusel>-->
+
+  <!-- CONTENEDOR DE ICONOS A LA DERECHA -->
+ <!-- <div class="iconos-derecha" >
+    <a href="./paginas/aboutus/aboutus.html">
+      <img src="../../assets/img/logos/user.jpg.png" alt="User" class="icono-nav">
+    </a>
+    <a routerLink="/carrito">
+      <img src="../../assets/img/logos/carrito.jpg.png" alt="Carrito" class="icono-nav">
+    </a>
+  </div>
+-->
+
+<!-- Botón de WhatsApp flotante -->
+<a
+  *ngIf="mostrarBotonWhatsapp"
+  class="btn-whatsapp"
+   href="https://wa.me/5492944501777?text=%C2%A1Hola%20quiero%20mas%20informacion%20del%20alquiler%21%20y%20los%20traslados%21"
+  target="_blank"
+>
+  <img src="assets/img/logos/logow.jpg.png" alt="WhatsApp" />
+</a>
+
+
+<div class="producto-seccion">
+<app-productos [productos]="productos"></app-productos>
+  </div>
+
+
+<div id="experiencia">
+  <app-experiencia></app-experiencia>
+</div>
+  <div id="comofunciona">
+  <app-comofunciona></app-comofunciona>
+</div>
+<div id="reserva">
+  <app-accion></app-accion>
+</div>
+
+<div id="footer">
+  <app-footer></app-footer>
+</div>
+<!--
+<section class="section two-column-section form">
+  <div class="wrap-title-section">
+    <h2>Formulario de Contacto</h2>
+  </div>
+
+  <div class="wrap-two-column">
+    <div class="wrap-img_two-column">
+      <div class="wrap-text-column">
+        <h3>Contacta con nosotros</h3>
+        <form action="procesar_formulario.php" method="post" class="form">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" required>
+          <br><br>
+
+          <label for="asunto">Asunto:</label>
+          <input type="text" name="asunto" id="asunto" required>
+          <br><br>
+
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea name="mensaje" id="mensaje" rows="4" cols="40" required></textarea>
+          <br><br>
+
+          <input type="submit" value="Enviar" class="cta-a">
+        </form>
+      </div>
+    </div>
+
+    <div class="wrap-img_two-column">
+      <img src="img/disenador-trabajando2.jpeg" alt=""> 
+      <p>[Imagen de contacto o trabajo]</p>
+    </div>
+  </div>
+</section>
+-->
+<!--
+<section class="section logos-section">
+  <div class="wrap-logos-section">
+     Logos removidos
+    <p>Marcas asociadas (aquí irían los logos)</p>
+  </div>
+</section>
+-->
+

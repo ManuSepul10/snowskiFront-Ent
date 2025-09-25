@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+/* Animaciones base */
+
+/* Animaciones base */
+
+
+.reveal-show {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Animaciones de entrada */
+.reveal-bottom {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal-top {
+  opacity: 0;
+  transform: translateY(-70px);
+  transition: all 3.5s ease-out;
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-70px);
+  transition: all 3.5s ease-out;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(70px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal-zoom {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 1.0s ease-out;
+}

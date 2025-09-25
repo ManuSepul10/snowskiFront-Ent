@@ -1,0 +1,57 @@
+.como-funciona {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.como-funciona h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.0rem;
+  margin-bottom: 3.0rem;
+  color: #e0b800;
+}
+
+.como-funciona ol {
+  list-style: none;
+
+  padding-left: 0;
+  font-size: 1.1rem;
+}
+
+.como-funciona li {
+  margin-bottom: 1rem;
+  font-size: 23px;
+}
+
+.formas-pago {
+  background-color: #f2f2f2;
+
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.formas-pago h2 {
+  font-size: 2rem;
+  color: #e0b800;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logos-pago {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  gap: 1.5rem;
+}
+
+.logos-pago img {
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s;
+  filter: grayscale(40%);
+}
+
+.logos-pago img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}

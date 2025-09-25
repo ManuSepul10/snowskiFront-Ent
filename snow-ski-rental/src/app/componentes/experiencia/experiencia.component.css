@@ -1,0 +1,101 @@
+.experiencia {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.experiencia h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #e0b800;
+}
+
+.experiencia p {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Sección estadísticas */
+
+.estadisticas {
+  position: relative;
+  background: url('/assets/img/fondos/fondo2.jpg') center/cover no-repeat fixed;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.estadisticas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.estadistica {
+  position: relative;
+  z-index: 2;
+  margin: 1rem;
+  flex: 1 1 220px;
+  max-width: 250px;
+}
+
+.estadistica h3 {
+  font-size: 3rem;
+  color: #e0b800;
+  margin-bottom: 0.5rem;
+}
+
+.estadistica p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff9e6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experiencia h2 {
+    font-size: 2.3rem;
+  }
+
+  .experiencia p {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .estadisticas {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+  }
+
+  .estadistica {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .estadistica h3 {
+    font-size: 2.5rem;
+  }
+
+  .estadistica p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .estadisticas {
+    background-position: top center;
+    background-size: cover;
+  }
+}

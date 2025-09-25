@@ -1,0 +1,21 @@
+<!-- carrusel.component.html -->
+<div class="carrusel-container">
+ <div class="slider-wrapper" [ngStyle]="{'transform': 'translateX(-' + currentPosition * 100 + '%)'}">
+
+
+
+    <div class="slide" *ngFor="let item of items">
+      <img [src]="item.image" alt="Slide" />
+      <div class="slide-text">
+        <h2>{{ item.tittle?.first }}</h2>
+         
+         <a href="https://wa.me/5492944501777?text=%C2%A1Hola%20quiero%20mas%20informacion%20del%20alquiler%21%20y%20los%20traslados%21" class="cta-a">Mas informacion</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button (click)="setBack()">←</button>
+    <button (click)="setNext()">→</button>
+  </div>
+</div>
